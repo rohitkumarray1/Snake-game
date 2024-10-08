@@ -1,0 +1,44 @@
+@media (max-width: 600px) {
+    body,html {
+        font-size: 8px;
+    }
+    .game-container .scorcard p {
+        margin-top: 7rem;
+    }
+    .game-controls-container {
+        display: block;
+    }
+    .game-start-ui {
+        background-image: url(img/game-play-in-phone.jpg);
+    }
+    .game-over-ui {
+        background-image: url(img/game-over-in-phone.jpg);
+    }
+    .game-over-ui .game-over-scorcard p {
+        margin-top: 10rem;
+    }
+}
+
+@media (max-width: 768px) {
+    body, html {
+        font-size: 9px;
+    }
+    .game-container .scorcard p {
+        margin-top: 7rem;
+    }
+    .game-controls-container {
+        display: block;
+    }
+}
+
+@media (min-width: 992px) {
+    html {
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 1200px) {
+    html {
+        font-size: 12px;
+    }
+}

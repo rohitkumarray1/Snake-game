@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="game-start-ui">
+            <button id="playGame">Play Game</button>
+        </div>
+
+        <div class="game-container">
+            <div class="scorcard">
+                <p id="currentScore">Score: <span>0</span></p>
+                <p id="currentHighScore">HighScore: <span>0</span></p>
+            </div>
+            <div class="game-board" id="gameBoard">
+                <div class="snake-size"></div>
+            </div>
+
+            <div class="game-controls-container">
+                <div class="game-controls">
+                    <button id="leftBtn"><i class="fa-solid fa-angle-left"></i></button>
+                    <div class="upDown">
+                        <button id="upBtn"><i class="fa-solid fa-angle-up"></i></button>
+                        <button id="downBtn"><i class="fa-solid fa-angle-down"></i></button>
+                    </div>
+                    <button id="rightBtn"><i class="fa-solid fa-angle-right"></i></button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="game-over-ui">
+            <div class="game-over-scorcard">
+                <p id="OverGameScore">Score: <span>0</span></p>
+                <p id="OverHighScore">HighScore: <span>0</span></p>
+            </div>
+            <button id="playAgain">Play Again</button>
+        </div>
+
+    </div>
+
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
