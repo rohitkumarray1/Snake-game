@@ -1,195 +1,194 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    caret-color: transparent;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  caret-color: transparent;
 }
 
-body, html {
-    font-size: 10px;
+body,
+html {
+  font-size: 10px;
 }
 
 body {
-    font-family: "Permanent Marker", cursive;
+  font-family: "Permanent Marker", cursive;
 }
 
 .container {
-    max-width: 100%;
-    max-height: 100vh;
+  max-width: 100%;
+  max-height: 100vh;
 }
-
 
 /* All butttons */
 button {
-    border: none;
-    outline: none;
-    position: relative;
-    cursor: pointer;
-    border-radius: 4px;
+  border: none;
+  outline: none;
+  position: relative;
+  cursor: pointer;
+  border-radius: 4px;
 }
-
 
 /* Game Start Ui */
 .game-start-ui {
-    position: absolute;
-    top: 0;
-    height: 100vh;
-    width: 100%;
-    background-image: url(img/game-play.jpg);
-    background-size: cover;
-    background-position: center;
-    text-align: center;
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  background-image: url(img/game-play.jpg);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
 }
 
 .game-start-ui button {
-    top: 80%;
-    color: #ffffff;
-    font-size: 2rem;
-    background-color: #441361;
-    padding: 1.5rem 4rem;
-    box-shadow: 8px 8px 10px 0px rgba(0, 0, 0, 0.50);
+  top: 80%;
+  color: #ffffff;
+  font-size: 2rem;
+  background-color: #441361;
+  padding: 1.5rem 4rem;
+  box-shadow: 8px 8px 10px 0px rgba(0, 0, 0, 0.5);
 }
-
 
 /* Main Game Container */
 .game-container {
-    position: absolute;
-    top: 0;
-    height: 100vh;
-    width: 100%;
-    background-image: url(img/game-wall.jpg);
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    visibility: hidden;
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  background-image: url(img/game-wall.jpg);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  visibility: hidden;
 }
 
 .game-container .scorcard p {
-    display: inline-block;
-    font-size: 2.8rem;
-    margin: 2rem 2rem;
-    color: #ffffff;
+  display: inline-block;
+  font-size: 2.8rem;
+  margin: 2rem 2rem;
+  color: #ffffff;
 }
 
 .game-board {
-    position: relative;
-    height: 40rem;
-    width: 40rem;
-    border-radius: 4px;
-    background-image: url(img/game-board.jpg);
-    background-size: cover;
-    background-position: center;
+  position: relative;
+  height: 40rem;
+  width: 40rem;
+  border-radius: 4px;
+  background-image: url(img/game-board.jpg);
+  background-size: cover;
+  background-position: center;
 }
 .snake-size {
-    height: 2rem;
-    width: 2rem;
+  height: 2rem;
+  width: 2rem;
 }
-
 
 /* Game Controls for mobiles */
 .game-controls-container {
-    display: none;
-    margin: 5rem auto;
+  display: none;
+  margin: 5rem auto;
 }
 
 .game-controls {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .game-container .upDown {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 25px;
 }
 
 .game-controls button {
-    background-color: #000000;
-    padding: 10px;
-    margin: 4px;
+  background-color: #000000;
+  padding: 18px;
+  margin: 4px;
 }
 
 .game-controls button i {
-    color: #ffffff;
+  color: #ffffff;
 }
-
 
 /* Game Over Ui */
 .game-over-ui {
-    position: absolute;
-    top: 0;
-    height: 100vh;
-    width: 100%;
-    background-image: url(img/game-over3.jpg);
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-    visibility: hidden;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0.1);
-    transition: transform 0.4s, top 0.4s;
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  background-image: url(img/game-over3.jpg);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  visibility: hidden;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.1);
+  transition: transform 0.4s, top 0.4s;
 }
 
 .game-over-ui .game-over-scorcard p {
-    display: inline-block;
-    font-size: 2.8rem;
-    margin: 2rem 2rem;
-    color: #ffffff;
+  display: inline-block;
+  font-size: 2.8rem;
+  margin: 2rem 2rem;
+  color: #ffffff;
 }
 
 .game-over-ui button {
-    top: 66%;
-    color: #ffffff;
-    font-size: 2rem;
-    background-color: #732fd3;
-    padding: 1.5rem 4rem;
-    box-shadow: 8px 8px 10px 0px rgba(0, 0, 0, 0.50);
+  top: 66%;
+  color: #ffffff;
+  font-size: 2rem;
+  background-color: #732fd3;
+  padding: 1.5rem 4rem;
+  box-shadow: 8px 8px 10px 0px rgba(0, 0, 0, 0.5);
 }
-
 
 /* Visible And Hidden Through Js */
 .show {
-    visibility: visible;
+  visibility: visible;
 }
 
 .hide {
-    visibility: hidden;
+  visibility: hidden;
 }
 
 .showGameOver {
-    visibility: visible;
-    top: 50%;
-    transform: translate(-50%, -50%) scale(1);
-}
-
-
-/* Javascript adding css */
-.snake,
-.food {
-    position: absolute;
-    width: 2rem;
-    height: 2rem;
+  visibility: visible;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
 }
 
 .snake {
-    background-color: silver;
-    border: 1px solid black;
-    border-radius: 2px;
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  background-color: #32cd32;
+  border: 1px solid #006400;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  transition: all 0.1s ease;
 }
 
-/* .food {
-    background-color: orangered;
-    border-radius: 50%;
-} */
+.snake-head {
+  background-color: #006400;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+}
+
+.snake-body {
+  background-color: #228b22;
+  border: none;
+}
+
 .food {
-    background-color: orangered;
-    border-radius: 50%;
-    transition: width 0.1s, height 0.1s; /* Add smooth size transition */
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  background-color: orangered;
+  border-radius: 50%;
+  transition: width 0.1s, height 0.1s;
 }
